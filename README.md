@@ -1,5 +1,10 @@
 # Spotify Liked Songs Dedupe 🎧
 
+![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue)
+![No dependencies](https://img.shields.io/badge/dependencies-none-success)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![CI](https://github.com/Niko-Jensen/liked-songs-dedupe/actions/workflows/ci.yml/badge.svg)
+
 Tired of a Liked Songs list full of tracks that already live in your playlists? This tool finds every liked song that's already in one of your playlists and removes it from Liked Songs — **your playlists are never touched**.
 
 Built after Spotify's February 2026 API migration: it uses the new `DELETE /me/library` endpoint (the old `DELETE /me/tracks` returns `403 Forbidden` for development-mode apps).
@@ -85,6 +90,10 @@ Run it again any time — it only removes duplicates that are still liked, so it
 **Tracks in "My Shazam Tracks" worry me.** That playlist is auto-synced from Shazam. If a track's only home is that list and you ever disconnect Shazam, it would be gone from Spotify entirely. Move those tracks into a normal playlist first if you care about them.
 
 **Does this delete anything from my playlists?** No. Removing a like only affects Liked Songs. Playlists are completely independent.
+
+## Contributing
+
+Found a bug or want a feature (e.g. keeping tracks that are only in auto-synced playlists)? Open an issue or a pull request — all contributions welcome.
 
 ## License
 
