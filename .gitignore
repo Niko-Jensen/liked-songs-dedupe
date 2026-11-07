@@ -1,0 +1,5 @@
+spotify_token.json
+duplicates_report.md
+keep_report.md
+__pycache__/
+*.pyc
